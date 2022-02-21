@@ -1,3 +1,4 @@
+# I would like to learn how to version control projects with git.
 # mycode
 Tracking my code
 # mycode (Project Title)
