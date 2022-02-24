@@ -13,7 +13,7 @@ while True:
                             
                                     
                                 #Similar "(Rock,  Paper, Scissors)
-    your_avatar = input("Choose an avatar (bear, cowboy, ninja): ").lower()
+    your_avatar = input("Choose an avatar (bear, cowboy, ninja): ")
 
 #Possible choices for your Avatar
     avatar = ["bear", "cowboy", "ninja"]
