@@ -8,7 +8,9 @@ from random import randint
 
 #RULEZ:Ninja beats Cowboy using lighting speed ninja kicks, Cowboy beats Bear with his quick draw and perfect accuracy, Bear beats Ninja with a strong swipe of his clawed paw 
 
-while True:                          
+while True:
+
+                            
                                     
                                 #Similar "(Rock,  Paper, Scissors)
     your_avatar = input("Choose an avatar (bear, cowboy, ninja): ").lower()
@@ -41,6 +43,6 @@ while True:
             print("Without a sound..., YOU WIN!")
 
 
-    one_more_round = input("Challenge another opponent? (y/n): ")
+    one_more_round = input("Challenge another opponent? (y/n): ").lower()
     if one_more_round.lower() != "y":
         break
