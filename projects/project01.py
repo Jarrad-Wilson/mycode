@@ -22,7 +22,7 @@ while True:
     mystery_player = avatar[randint (0,2)]
 
 #AND SO THE BATTLES BEGIN!!!!!!
-    print(f"\nYou chose {your_avatar}, computer chose {mystery_player}.\n")
+    print(f"\nYou chose {your_avatar}, mystery_player chose {mystery_player}.\n")
 
     if your_avatar == mystery_player:
         print("Stalemate. You both live another day!")
