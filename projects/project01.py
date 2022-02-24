@@ -13,7 +13,7 @@ while True:
                             
                                     
                                 #Similar "(Rock,  Paper, Scissors)
-    your_avatar = input("Choose an avatar (bear, cowboy, ninja): ")
+    your_avatar = input("Choose an avatar (bear, cowboy, ninja): ").lower()
 
 #Possible choices for your Avatar
     avatar = ["bear", "cowboy", "ninja"]
@@ -43,6 +43,6 @@ while True:
             print("Without a sound..., YOU WIN!")
 
 
-    one_more_round = input("Challenge another opponent? (y/n): ")
+    one_more_round = input("Challenge another opponent? (y/n): ").lower()
     if one_more_round.lower() != "y":
         break
