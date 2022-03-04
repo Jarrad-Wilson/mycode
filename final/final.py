@@ -4,7 +4,7 @@
 from random import randint
 
 # Menu courtesy of "Andy Dolinski's youtube video "https://www.youtube.com/watch?v=63nw00JqHo0&t=207s"
-# Initial Menu, print every time Final.py is called
+# Initial Menu
 # Define the menu() function
 def menu():
     print("[1] Rock, Paper, Scissors") # Press 1 to play RPS
@@ -81,32 +81,60 @@ def game2():
         print(f"\nYou chose {your_avatar}, mystery_player chose {mystery_player}.\n")
 
         if your_avatar == mystery_player:
-            print("Stalemate. You both live another day!")
+            print("\n----------------------------")
+            print("----------------------------\n")
+            print("Stalemate. You both live another day!\n")
+            print("\n----------------------------")
+            print("----------------------------\n")
             tie+=1 # Add 1 to Tie counter
         elif your_avatar == 'bear':
             if mystery_player == 'cowboy':
-                print("Bullet through the head, YOU LOSE!")
+                print("\n----------------------------")
+                print("----------------------------\n")
+                print("Bullet through the head, YOU LOSE!\n")
+                print("\n----------------------------")
+                print("----------------------------\n")
                 mystery_player_wins+=1 # Add 1 to mystery_player_wins counter
             else:
-                print("You demolished them, YOU WIN!")
+                print("\n----------------------------")
+                print("----------------------------\n")
+                print("You demolished them, YOU WIN!\n")
+                print("\n----------------------------")
+                print("----------------------------\n")
                 your_wins+=1 # Add 1 to your_wins
         elif your_avatar == 'cowboy':
             if mystery_player == 'ninja':
-                print("Without a sound..., YOU LOSE!")
+                print("\n----------------------------")
+                print("----------------------------\n")
+                print("Without a sound..., YOU LOSE!\n")
+                print("\n----------------------------")
+                print("----------------------------\n")
                 mystery_player_wins+=1 # Add 1 to mystery_player_wins counter
             else:
-                print("Bullet through the head, YOU WIN!")
+                print("\n----------------------------")
+                print("----------------------------\n")
+                print("Bullet through the head, YOU WIN!\n")
+                print("\n----------------------------")
+                print("----------------------------\n")
                 your_wins+=1 # Add 1 to your_wins
         elif your_avatar == 'ninja':
             if mystery_player == 'bear':
-                print("You have been demolished, YOU LOSE!")
+                print("\n----------------------------")
+                print("----------------------------\n")
+                print("You have been demolished, YOU LOSE!\n")
+                print("\n----------------------------")
+                print("----------------------------\n")
                 mystery_player_wins+=1 # Add 1 to mystery_player_wins counter
             else:
-                print("Without a sound..., YOU WIN!")
+                print("\n----------------------------")
+                print("----------------------------\n")
+                print("Without a sound..., YOU WIN!\n")
+                print("\n----------------------------")
+                print("----------------------------\n")
                 your_wins+=1 # Add 1 to your_wins
         
         # Print the score counter after every round
-        print("You have "+str(your_wins)+" wins")
+        print("\nYou have "+str(your_wins)+" wins")
         print("The computer has "+str(mystery_player_wins)+" wins")
         print("Tied "+str(tie))
         
@@ -133,4 +161,4 @@ while game != 0:
     else:
         print("invalid option.")
 
-print("Thanks For playing Goodbye.")
+print("\nThanks For playing Goodbye.\n")
