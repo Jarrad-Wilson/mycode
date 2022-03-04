@@ -3,6 +3,7 @@
 # From random module
 from random import randint
 
+# Menu courtesy of "Andy Dolinski's youtube video "https://www.youtube.com/watch?v=63nw00JqHo0&t=207s"
 # Initial Menu, print every time Final.py is called
 # Define the menu() function
 def menu():
