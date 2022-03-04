@@ -12,13 +12,13 @@ def menu():
 
 # Define what happens when option 1 is chosen
 def game1():
-    print()
     your_wins = 0
     mystery_player_wins = 0
     tie = 0
 
     while True:
         your_choice = input("Make a choice (Rock, Paper, Scissors): ").lower()
+# Mystery_players random choices
         choice = ["rock", "paper", "scissors"]
         mystery_player = choice[randint (0,2)]
 
@@ -51,12 +51,10 @@ def game1():
                 print("\tCut them to pieces, YOU WIN!")
                 your_wins+=1 # Add 1 to your_wins
 
-        print()
         print("You have "+str(your_wins)+" wins")
         print("The computer has "+str(mystery_player_wins)+" wins")
         print("Tied "+str(tie))
-        print()
-
+        
         play_again = input("Play again? (Y/N): ").lower()
         while play_again not in ['y', 'n']:
             play_again = input("That is not a valid choice. Please try again: ").lower()
@@ -69,7 +67,6 @@ def game1():
         print("----------------------------\n")
 
 def game2():      
-    print()
     your_wins = 0
     mystery_player_wins = 0
     tie = 0
@@ -108,12 +105,10 @@ def game2():
                 your_wins+=1 # Add 1 to your_wins
         
         # Print the score counter after every round
-        print()
         print("You have "+str(your_wins)+" wins")
         print("The computer has "+str(mystery_player_wins)+" wins")
         print("Tied "+str(tie))
-        print()
-
+        
         play_again = input("Play again? (Y/N): ").lower()
         while play_again not in ['y', 'n']:
             play_again = input("That is not a valid choice. Please try again: ").lower()
@@ -126,7 +121,7 @@ def game2():
 
 
 menu()
-game = int(input("Enter Your game: "))
+game = int(input("Choose a game to play: "))
 while game != 0:
     if game == 1:
         game1()
