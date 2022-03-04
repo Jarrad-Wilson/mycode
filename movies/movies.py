@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
-
 import csv
-f = open('movies.csv')
-title = []
-genres = []
 
+# Asks for search criteria from user
+search = input("Choose a # from 1 - 149532:\n")
 
-movies = list(csv.reader(f))
+# Opens csv data file
+file = csv.reader(open("movies.csv"))
 
-print(movies[:10])
+# Go over each row and print it if it contains user input.
+for row in file:
+    if search in row:
+        print(row)
