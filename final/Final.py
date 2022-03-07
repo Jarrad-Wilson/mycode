@@ -84,7 +84,7 @@ def game1():
         print("The computer has "+str(mystery_player_wins)+" wins")
         print("Tied "+str(tie))
         
-        play_again = input("Play again? (Y/N): ").lower()
+        play_again = input("\nPlay again? (Y/N): ").lower()
         while play_again not in ['y', 'n']:
             play_again = input("That is not a valid choice. Please try again: ").lower()
 
@@ -162,7 +162,7 @@ def game2():
         print("The computer has "+str(mystery_player_wins)+" wins")
         print("Tied "+str(tie))
         
-        play_again = input("Play again? (Y/N): ").lower()
+        play_again = input("\nPlay again? (Y/N): ").lower()
         while play_again not in ['y', 'n']:
             play_again = input("That is not a valid choice. Please try again: ").lower()
 
